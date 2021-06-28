@@ -13,8 +13,8 @@ Make sure Docker and [Docker Compose](https://docs.docker.com/compose/install/) 
 ## Quick Start
 
 ```
-git clone https://github.com/geerlingguy/internet-monitoring
-cd internet-monitoring
+git clone https://github.com/dipan29/internet-monitoring
+cd internet-monitoring/prometheus
 docker-compose up -d
 ```
 
@@ -35,7 +35,7 @@ That's it. docker-compose builds the entire Grafana and Prometheus stack automag
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>:3030` for example http://localhost:3030
 
 username - admin
-password - wonka (Password is stored in the `config.monitoring` env file)
+password - monitoring (Password is stored in the `config.monitoring` env file, under grafana directory)
 
 The DataSource and Dashboard for Grafana are automatically provisioned.
 
@@ -57,6 +57,4 @@ http://localhost:9798/metrics speedtest exporter endpoint. Does take about 30 se
 
 Thanks to @maxandersen for making the original project this fork is based on.
 
-Thanks to @vegasbrianc work on making a [super easy docker](https://github.com/vegasbrianc/github-monitoring) stack for running prometheus and grafana.
-
-This setup is not secured in any way, so please only use on non-public networks, or find a way to secure it on your own.
+**This setup is not secured in any way, so please only use on non-public networks, or find a way to secure it on your own.**
