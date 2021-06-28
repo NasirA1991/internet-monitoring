@@ -12,6 +12,14 @@ Make sure Docker and [Docker Compose](https://docs.docker.com/compose/install/) 
 
 ## Quick Start
 
+If on Mac run this:
+
+```
+git clone https://github.com/dipan29/internet-monitoring && cd internet-monitoring/prometheus && docker-compose up && open http://localhost:3030/d/o9mIe_Aik/internet-connection
+```
+
+otherwise:
+
 ```
 git clone https://github.com/dipan29/internet-monitoring
 cd internet-monitoring/prometheus
